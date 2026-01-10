@@ -627,37 +627,18 @@
             height: 40px;
             flex: 0 0 40px;
             border-radius: 10px;
-            background: rgba(66, 91, 118, 0.08);
-            color: var(--accent-dark);
+            background: transparent;
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
         }
 
-        .cert-icon svg {
-            width: 20px;
-            height: 20px;
-            stroke: currentColor;
-        }
-
-        .cert-card.teams .cert-icon {
-            background: rgba(91, 95, 199, 0.14);
-            color: #5B5FC7;
-        }
-
-        .cert-card.ai .cert-icon {
-            background: rgba(0, 164, 239, 0.14);
-            color: #00A4EF;
-        }
-
-        .cert-card.security .cert-icon {
-            background: rgba(255, 204, 42, 0.22);
-            color: #8A6D00;
-        }
-
-        .cert-card.fundamentals .cert-icon {
-            background: rgba(66, 91, 118, 0.10);
-            color: var(--accent-dark);
+        .cert-badge {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            display: block;
         }
 
         .cert-name {
@@ -666,6 +647,19 @@
             color: var(--text-primary);
             line-height: 1.35;
             margin-bottom: 2px;
+        }
+
+        .cert-code {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 999px;
+            background: rgba(66, 91, 118, 0.10);
+            color: var(--accent-dark);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            margin-right: 10px;
+            transform: translateY(-1px);
         }
 
         .cert-meta {
@@ -1446,53 +1440,39 @@
                     <div class="certs-block">
                         <div class="certs-title">Microsoft Certifications</div>
                         <ul class="certs-grid" role="list">
-                            <li class="cert-card teams">
+                            <li class="cert-card">
                                 <div class="cert-icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M21 12a4 4 0 0 1-4 4H9l-5 3V6a4 4 0 0 1 4-4h9a4 4 0 0 1 4 4z" />
-                                        <path d="M8 8h8" />
-                                        <path d="M8 11h6" />
-                                    </svg>
+                                    <img class="cert-badge" loading="lazy" decoding="async" alt="MS-700 badge" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg" />
                                 </div>
                                 <div>
-                                    <div class="cert-name">Microsoft 365 Certified: Teams Administrator Associate</div>
+                                    <div class="cert-name"><span class="cert-code">MS-700</span>Microsoft 365 Certified: Teams Administrator Associate</div>
                                     <div class="cert-meta">Associate</div>
                                 </div>
                             </li>
-                            <li class="cert-card ai">
+                            <li class="cert-card">
                                 <div class="cert-icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M12 2l1.8 5.8L20 10l-6.2 2.2L12 18l-1.8-5.8L4 10l6.2-2.2L12 2z" />
-                                        <path d="M4 20h16" />
-                                    </svg>
+                                    <img class="cert-badge" loading="lazy" decoding="async" alt="AI-900 badge" src="https://images.credly.com/size/680x680/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png" />
                                 </div>
                                 <div>
-                                    <div class="cert-name">Microsoft Certified: Azure AI Fundamentals</div>
+                                    <div class="cert-name"><span class="cert-code">AI-900</span>Microsoft Certified: Azure AI Fundamentals</div>
                                     <div class="cert-meta">Fundamentals</div>
                                 </div>
                             </li>
-                            <li class="cert-card security">
+                            <li class="cert-card">
                                 <div class="cert-icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                                        <path d="M9 12l2 2 4-5" />
-                                    </svg>
+                                    <img class="cert-badge" loading="lazy" decoding="async" alt="SC-900 badge" src="https://images.credly.com/size/680x680/images/fc1352af-87fa-4947-ba54-398a0e63322e/security-compliance-and-identity-fundamentals-600x600.png" />
                                 </div>
                                 <div>
-                                    <div class="cert-name">Microsoft Certified: Security, Compliance, and Identity Fundamentals</div>
+                                    <div class="cert-name"><span class="cert-code">SC-900</span>Microsoft Certified: Security, Compliance, and Identity Fundamentals</div>
                                     <div class="cert-meta">Fundamentals</div>
                                 </div>
                             </li>
-                            <li class="cert-card fundamentals">
+                            <li class="cert-card">
                                 <div class="cert-icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M4 19a2 2 0 0 0 2 2h14" />
-                                        <path d="M4 4a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2z" />
-                                        <path d="M8 7h8" />
-                                    </svg>
+                                    <img class="cert-badge" loading="lazy" decoding="async" alt="MS-900 badge" src="https://images.credly.com/size/680x680/images/0c6d9839-f468-4adc-987d-5cfae4a9ee67/image.png" />
                                 </div>
                                 <div>
-                                    <div class="cert-name">Microsoft 365 Certified: Fundamentals</div>
+                                    <div class="cert-name"><span class="cert-code">MS-900</span>Microsoft 365 Certified: Fundamentals</div>
                                     <div class="cert-meta">Fundamentals</div>
                                 </div>
                             </li>
