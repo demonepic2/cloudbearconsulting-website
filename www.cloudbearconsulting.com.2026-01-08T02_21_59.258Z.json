@@ -1,0 +1,193 @@
+{
+  "data": {
+    "branding": {
+      "colorScheme": "light",
+      "fonts": [
+        {
+          "family": "Inter",
+          "count": 45
+        },
+        {
+          "family": "sans-serif",
+          "count": 45
+        },
+        {
+          "family": "DM Serif Display",
+          "count": 17
+        },
+        {
+          "family": "serif",
+          "count": 17
+        }
+      ],
+      "colors": {
+        "primary": "#FFCC2A",
+        "accent": "#425B76",
+        "background": "#FFFFFF",
+        "textPrimary": "#000000",
+        "link": "#425B76"
+      },
+      "typography": {
+        "fontFamilies": {
+          "primary": "Inter",
+          "heading": "DM Serif Display"
+        },
+        "fontStacks": {
+          "body": [
+            "Inter",
+            "sans-serif"
+          ],
+          "heading": [
+            "DM Serif Display",
+            "serif"
+          ],
+          "paragraph": [
+            "Inter",
+            "sans-serif"
+          ]
+        },
+        "fontSizes": {
+          "h1": "62px",
+          "h2": "42px",
+          "body": "18px"
+        }
+      },
+      "spacing": {
+        "baseUnit": 4,
+        "borderRadius": "0px"
+      },
+      "components": {},
+      "images": {
+        "logo": null,
+        "favicon": null,
+        "ogImage": null
+      },
+      "__framework_hints": [
+        "HubSpot"
+      ],
+      "__llm_button_reasoning": {
+        "primary": {
+          "index": -1,
+          "text": "N/A",
+          "reasoning": "LLM failed"
+        },
+        "secondary": {
+          "index": -1,
+          "text": "N/A",
+          "reasoning": "LLM failed"
+        },
+        "confidence": 0
+      },
+      "confidence": {
+        "buttons": 0,
+        "colors": 0,
+        "overall": 0
+      }
+    },
+    "metadata": {
+      "twitter:title": "Cloud Bear Consulting",
+      "og:description": "",
+      "title": "Cloud Bear Consulting",
+      "description": "",
+      "ogTitle": "Cloud Bear Consulting",
+      "ogDescription": "",
+      "ogUrl": "https://www.cloudbearconsulting.com",
+      "generator": "HubSpot",
+      "og:title": "Cloud Bear Consulting",
+      "og:url": "https://www.cloudbearconsulting.com",
+      "language": "en-us",
+      "twitter:card": "summary",
+      "viewport": "width=device-width, initial-scale=1",
+      "twitter:description": "",
+      "scrapeId": "019b9b69-299e-739f-97fe-26f3c4cb5667",
+      "sourceURL": "https://www.cloudbearconsulting.com",
+      "url": "https://www.cloudbearconsulting.com/",
+      "statusCode": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "timezone": "America/New_York",
+      "proxyUsed": "basic",
+      "indexId": "e2dd1db1-862c-46dc-a8a0-80565d001f7f",
+      "creditsUsed": 1,
+      "concurrencyLimited": false
+    }
+  },
+  "scrape_id": "019b9b69-299e-739f-97fe-26f3c4cb5667",
+  "id": "gJjr3sm8kPYrIX8HKx8sk",
+  "startedAt": "2026-01-08T02:21:59.258Z",
+  "endedAt": "2026-01-08T02:22:03.571Z",
+  "endpoint": "scrape",
+  "formState": {
+    "extractSetupCompleted": false,
+    "urls": [],
+    "extractSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "company_mission": {
+          "type": "string"
+        },
+        "supports_sso": {
+          "type": "boolean"
+        },
+        "is_open_source": {
+          "type": "boolean"
+        },
+        "is_in_yc": {
+          "type": "boolean"
+        }
+      }
+    },
+    "extractPrompt": "Extract the company details, following the schema.",
+    "enableWebSearch": false,
+    "constrainUrls": false,
+    "options": {
+      "onlyMainContent": false,
+      "parsePDF": true,
+      "stealthMode": false,
+      "excludeTags": [],
+      "includeTags": [],
+      "waitFor": "",
+      "timeout": "",
+      "maxAge": "2 days",
+      "ignoreSitemap": false,
+      "crawlEntireDomain": false,
+      "sitemap": "include",
+      "limit": "10",
+      "maxDepth": "",
+      "excludePaths": [],
+      "includePaths": [],
+      "includeSubdomains": false,
+      "search": "",
+      "scrapeContentFromSearchResults": true,
+      "timeBasedSearch": "",
+      "location": "",
+      "prompt": ""
+    },
+    "formats": [
+      "branding"
+    ],
+    "sources": [
+      "web"
+    ],
+    "categories": [],
+    "jsonSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "company_name": {
+          "type": "string"
+        },
+        "company_description": {
+          "type": "string"
+        }
+      }
+    },
+    "jsonPrompt": "",
+    "agent": {},
+    "url": "www.cloudbearconsulting.com",
+    "endpoint": "scrape"
+  },
+  "status": "success",
+  "version": "lAtLR8ZnEGpmijO4g9ZXk",
+  "isPreview": false
+}

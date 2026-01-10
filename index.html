@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Bear Consulting | Stop Wasting Money on Microsoft 365</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FFCC2A;
+            --primary-hover: #E6B800;
+            --primary-glow: rgba(255, 204, 42, 0.3);
+            --accent: #425B76;
+            --accent-dark: #374A5E;
+            --accent-light: #5A7A9A;
+            --background: #FFFFFF;
+            --background-alt: #F8F9FA;
+            --text-primary: #1A1A1A;
+            --text-secondary: #4A5568;
+            --text-light: #718096;
+            --white: #FFFFFF;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+            --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
+            --shadow-xl: 0 20px 50px rgba(0,0,0,0.15);
+            --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 18px;
+            line-height: 1.7;
+            color: var(--text-primary);
+            background: var(--background);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'DM Serif Display', serif;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 40px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 17px;
+            font-weight: 600;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s var(--transition-smooth);
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--text-primary);
+            box-shadow: var(--shadow-md), 0 0 0 0 rgba(255, 204, 42, 0.4);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg), 0 0 0 4px rgba(255, 204, 42, 0.2);
+        }
+
+        .btn-secondary {
+            background: var(--accent);
+            color: var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+        }
+
+        /* ==================== */
+        /* HEADER (ORIGINAL)    */
+        /* ==================== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding: 16px 0;
+            transition: all 0.3s ease;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        .header .btn {
+            padding: 12px 28px;
+            font-size: 15px;
+        }
+
+        /* ==================== */
+        /* HERO (ORIGINAL)      */
+        /* ==================== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 140px 0 100px;
+            background: linear-gradient(135deg, #425B76 0%, #374A5E 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80%;
+            height: 150%;
+            background: radial-gradient(ellipse at center, rgba(255, 204, 42, 0.08) 0%, transparent 60%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 720px;
+            background: rgba(26, 26, 26, 0.85);
+            padding: 64px 56px;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        @supports (backdrop-filter: blur(12px)) {
+            .hero-content {
+                background: rgba(26, 26, 26, 0.75);
+                backdrop-filter: blur(12px) saturate(180%);
+                -webkit-backdrop-filter: blur(12px) saturate(180%);
+            }
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 6vw, 68px);
+            color: var(--white);
+            margin-bottom: 24px;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(18px, 2.5vw, 22px);
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 40px;
+            max-width: 560px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.2s forwards;
+        }
+
+        .hero-cta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 32px;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.4s forwards;
+        }
+
+        .hero-support {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.7);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.6s forwards;
+        }
+
+        .hero-image {
+            display: none;
+        }
+
+        .hero-visual {
+            position: absolute;
+            right: -10%;
+            top: 50%;
+            transform: translateY(-50%) rotate(-3deg);
+            width: 50%;
+            height: 75%;
+            background: linear-gradient(135deg, rgba(255, 204, 42, 0.15) 0%, rgba(255, 204, 42, 0.05) 100%);
+            border-radius: 200px 0 0 200px;
+            filter: blur(60px);
+            opacity: 1;
+            z-index: 0;
+        }
+
+        /* ==================== */
+        /* TOOLS SHOWCASE       */
+        /* ==================== */
+        .tools-showcase {
+            padding: 80px 0;
+            background: linear-gradient(180deg, var(--white) 0%, var(--background-alt) 100%);
+            border-top: 1px solid rgba(0,0,0,0.05);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .tools-showcase h2 {
+            font-size: clamp(28px, 4vw, 36px);
+            color: var(--text-primary);
+            margin-bottom: 48px;
+            text-align: center;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tool-card {
+            background: var(--white);
+            padding: 40px 32px;
+            border-radius: 4px;
+            border: 1px solid rgba(0,0,0,0.06);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.4s var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tool-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--primary);
+            transform: scaleY(0);
+            transition: transform 0.4s var(--transition-smooth);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .tool-card:hover::before {
+            transform: scaleY(1);
+        }
+
+        .tool-card.sharepoint:hover::before {
+            background: #0078D4;
+        }
+
+        .tool-card.onedrive:hover::before {
+            background: #0364B8;
+        }
+
+        .tool-card.teams:hover::before {
+            background: #5B5FC7;
+        }
+
+        .tool-card.intune:hover::before {
+            background: #00A4EF;
+        }
+
+        .tool-icon {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .tool-name {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .tool-description {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ==================== */
+        /* PROBLEM SECTION (NEW)*/
+        /* ==================== */
+        .problem {
+            padding: 120px 0;
+            background: var(--accent);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .problem::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .problem-watermark {
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            transform: translateY(-50%);
+            font-size: 400px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.03);
+            pointer-events: none;
+            line-height: 1;
+        }
+
+        .problem-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .problem h2 {
+            font-size: clamp(36px, 5vw, 52px);
+            margin-bottom: 40px;
+        }
+
+        .problem-text {
+            font-size: 19px;
+            line-height: 1.8;
+            opacity: 0.95;
+            margin-bottom: 40px;
+        }
+
+        .problem-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin: 48px 0;
+            text-align: left;
+        }
+
+        .problem-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 24px 28px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 4px;
+            font-size: 16px;
+            transition: all 0.4s var(--transition-smooth);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .problem-list li:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateX(8px);
+        }
+
+        .problem-number {
+            font-family: 'DM Serif Display', serif;
+            font-size: 14px;
+            color: var(--primary);
+            font-weight: 400;
+            flex-shrink: 0;
+            opacity: 0.8;
+        }
+
+        .problem-closing {
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 40px;
+            color: var(--primary);
+        }
+
+        /* ==================== */
+        /* SOLUTION SECTION (NEW)*/
+        /* ==================== */
+        .solution {
+            padding: 120px 0;
+            background: var(--background-alt);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 64px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(36px, 5vw, 48px);
+            color: var(--text-primary);
+            margin-bottom: 20px;
+        }
+
+        .section-header p {
+            font-size: 19px;
+            color: var(--text-secondary);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-bottom: 64px;
+        }
+
+        .benefit-card {
+            background: var(--white);
+            padding: 48px 36px;
+            border-radius: 4px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.4s var(--transition-smooth);
+            border: 1px solid rgba(0,0,0,0.04);
+            position: relative;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 0;
+            background: var(--primary);
+            transition: height 0.4s var(--transition-smooth);
+            border-radius: 0 2px 2px 0;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .benefit-card:hover::before {
+            height: 60%;
+        }
+
+        .benefit-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--primary) 0%, #FFD954 100%);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 28px;
+            transition: transform 0.4s var(--transition-smooth);
+        }
+
+        .benefit-card:hover .benefit-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .benefit-icon svg {
+            width: 32px;
+            height: 32px;
+            stroke: var(--text-primary);
+        }
+
+        .benefit-card h3 {
+            font-size: 28px;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .benefit-card p {
+            color: var(--text-secondary);
+            font-size: 17px;
+        }
+
+        .section-cta {
+            text-align: center;
+        }
+
+        /* ==================== */
+        /* CREDIBILITY (NEW)    */
+        /* ==================== */
+        .credibility {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .credibility-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .credibility-content h2 {
+            font-size: clamp(32px, 4vw, 44px);
+            margin-bottom: 28px;
+        }
+
+        .credibility-content p {
+            font-size: 18px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 32px;
+            padding: 16px 24px;
+            background: var(--background-alt);
+            border-radius: 4px;
+        }
+
+        .trust-badge svg {
+            width: 36px;
+            height: 36px;
+        }
+
+        .trust-badge span {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .credibility-visual {
+            position: relative;
+        }
+
+        .credibility-card {
+            background: var(--accent);
+            color: var(--white);
+            padding: 48px;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .credibility-card::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: 20px;
+            bottom: 20px;
+            border: 2px solid var(--primary);
+            border-radius: 4px;
+            z-index: -1;
+        }
+
+        .years-number {
+            font-family: 'DM Serif Display', serif;
+            font-size: 96px;
+            line-height: 1;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+
+        .years-label {
+            font-size: 20px;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+
+        /* ==================== */
+        /* HOW IT WORKS (NEW)   */
+        /* ==================== */
+        .how-it-works {
+            padding: 120px 0;
+            background: var(--background-alt);
+        }
+
+        .timeline {
+            position: relative;
+            margin-top: 80px;
+        }
+
+        .timeline-line {
+            position: absolute;
+            top: 28px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70%;
+            height: 4px;
+            background: rgba(0,0,0,0.08);
+            border-radius: 2px;
+        }
+
+        .timeline-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            background: var(--primary);
+            border-radius: 2px;
+            transition: width 0.6s var(--transition-smooth);
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-card {
+            text-align: center;
+        }
+
+        .step-number {
+            width: 56px;
+            height: 56px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'DM Serif Display', serif;
+            font-size: 24px;
+            color: var(--text-primary);
+            margin: 0 auto 32px;
+            box-shadow: var(--shadow-md), 0 0 0 8px var(--background-alt);
+            position: relative;
+            z-index: 2;
+            transition: all 0.4s var(--transition-smooth);
+        }
+
+        .step-card:hover .step-number {
+            transform: scale(1.1);
+            box-shadow: var(--shadow-lg), 0 0 0 8px var(--background-alt), 0 0 30px var(--primary-glow);
+        }
+
+        .step-content {
+            background: var(--white);
+            padding: 40px 32px;
+            border-radius: 4px;
+            border: 1px solid rgba(0,0,0,0.06);
+            transition: all 0.4s var(--transition-smooth);
+        }
+
+        .step-card:hover .step-content {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .step-content h3 {
+            font-size: 26px;
+            margin-bottom: 16px;
+            margin-top: 0;
+        }
+
+        .step-content p {
+            color: var(--text-secondary);
+            font-size: 17px;
+        }
+
+        /* ==================== */
+        /* WHAT YOU GET (NEW)   */
+        /* ==================== */
+        .what-you-get {
+            padding: 120px 0;
+            background: linear-gradient(135deg, var(--accent) 0%, #374A5E 100%);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .what-you-get::before {
+            content: '';
+            position: absolute;
+            top: -100%;
+            right: -50%;
+            width: 100%;
+            height: 300%;
+            background: radial-gradient(ellipse at center, rgba(255, 204, 42, 0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .what-you-get .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .what-you-get h2 {
+            font-size: clamp(36px, 5vw, 48px);
+            margin-bottom: 56px;
+            text-align: center;
+        }
+
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px 64px;
+            max-width: 900px;
+            margin: 0 auto 64px;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            font-size: 18px;
+        }
+
+        .benefit-check {
+            width: 28px;
+            height: 28px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+            box-shadow: 0 0 20px var(--primary-glow);
+        }
+
+        .benefit-check svg {
+            width: 16px;
+            height: 16px;
+            stroke: var(--text-primary);
+            stroke-width: 3;
+        }
+
+        /* ==================== */
+        /* FAQ SECTION (NEW)    */
+        /* ==================== */
+        .faq {
+            padding: 120px 0;
+            background: var(--background-alt);
+        }
+
+        .faq-grid {
+            max-width: 800px;
+            margin: 64px auto 0;
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 16px;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 28px 32px;
+            background: none;
+            border: none;
+            text-align: left;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--background-alt);
+        }
+
+        .faq-icon {
+            width: 24px;
+            height: 24px;
+            position: relative;
+            flex-shrink: 0;
+            transition: transform 0.4s var(--transition-smooth);
+        }
+
+        .faq-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--accent);
+            transition: stroke 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-item.active .faq-icon svg {
+            stroke: var(--primary);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s var(--transition-smooth);
+            position: relative;
+        }
+
+        .faq-answer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 32px;
+            right: 32px;
+            height: 2px;
+            background: var(--primary);
+            transform: scaleX(0);
+            transition: transform 0.4s var(--transition-smooth);
+        }
+
+        .faq-item.active .faq-answer::before {
+            transform: scaleX(1);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+        }
+
+        .faq-answer-inner {
+            padding: 0 32px 28px;
+            color: var(--text-secondary);
+            font-size: 17px;
+            line-height: 1.8;
+            padding-top: 20px;
+        }
+
+        /* ==================== */
+        /* FINAL CTA (ORIGINAL) */
+        /* ==================== */
+        .final-cta {
+            padding: 140px 0;
+            background: var(--accent);
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .final-cta .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .final-cta h2 {
+            font-size: clamp(36px, 5vw, 52px);
+            margin-bottom: 24px;
+        }
+
+        .final-cta p {
+            font-size: 20px;
+            opacity: 0.9;
+            margin-bottom: 48px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .final-cta .btn-primary {
+            font-size: 19px;
+            padding: 22px 52px;
+        }
+
+        .final-support {
+            margin-top: 24px;
+            font-size: 15px;
+            opacity: 0.7;
+        }
+
+        /* ==================== */
+        /* FOOTER (ORIGINAL)    */
+        /* ==================== */
+        .footer {
+            padding: 48px 0;
+            background: #363435;
+            color: var(--white);
+        }
+
+        .footer-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .footer-brand {
+            margin-bottom: 4px;
+        }
+
+        .footer-logo img {
+            height: 120px;
+            width: auto;
+            display: block;
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .footer-email {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 15px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+            display: block;
+        }
+
+        .footer-email:hover {
+            opacity: 1;
+        }
+
+        .footer-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border-radius: 4px;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            opacity: 0.7;
+        }
+
+        .footer-social svg {
+            width: 28px;
+            height: 28px;
+            fill: var(--white);
+        }
+
+        .footer-bottom {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: left;
+            font-size: 14px;
+            opacity: 0.6;
+        }
+
+        /* ==================== */
+        /* ANIMATIONS           */
+        /* ==================== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s var(--transition-smooth);
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ==================== */
+        /* RESPONSIVE           */
+        /* ==================== */
+        @media (max-width: 1024px) {
+            .hero-image,
+            .hero-visual {
+                display: none;
+            }
+
+            .hero-content {
+                max-width: 100%;
+                padding: 48px 40px;
+            }
+
+            .benefits-grid,
+            .steps-grid,
+            .tools-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .credibility-inner {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .credibility-visual {
+                order: -1;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .timeline-line {
+                display: none;
+            }
+
+            .benefits-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header .btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            .logo img {
+                height: 40px;
+            }
+
+            .hero {
+                padding: 120px 0 80px;
+            }
+
+            .hero-content {
+                padding: 40px 32px;
+            }
+
+            .problem,
+            .solution,
+            .how-it-works,
+            .what-you-get,
+            .faq,
+            .tools-showcase {
+                padding: 80px 0;
+            }
+
+            .problem-list {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-question {
+                padding: 24px;
+                font-size: 16px;
+            }
+
+            .faq-answer-inner {
+                padding: 0 24px 24px;
+            }
+
+            .final-cta {
+                padding: 100px 0;
+            }
+
+            .footer-logo img {
+                height: 100px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 16px;
+            }
+
+            .container {
+                padding: 0 16px;
+            }
+
+            .btn {
+                width: 100%;
+                padding: 16px 32px;
+            }
+
+            .hero-content {
+                padding: 32px 24px;
+                background: rgba(26, 26, 26, 0.85);
+            }
+
+            .benefit-card,
+            .step-content,
+            .tool-card {
+                padding: 32px 24px;
+            }
+
+            .years-number {
+                font-size: 72px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">
+                    <img src="./CloudBearConsulting Logo/Font logo Png/Font logo Bg0.png" alt="Cloud Bear Consulting Logo">
+                </a>
+                <a href="https://outlook.office.com/book/FreeConsultations@cloudbearconsulting.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOK YOUR FREE CALL</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Stop Wasting Money on Microsoft 365</h1>
+                <p class="hero-subtitle">We help small businesses get real results from their subscription. See ROI in 30 days or less. Guaranteed.</p>
+                <div class="hero-cta">
+                    <a href="https://outlook.office.com/book/FreeConsultations@cloudbearconsulting.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOK YOUR FREE CALL</a>
+                </div>
+                <p class="hero-support">Join small businesses already saving time and money with Cloud Bear Consulting.</p>
+            </div>
+        </div>
+        <div class="hero-visual"></div>
+    </section>
+
+    <!-- Tools Showcase -->
+    <section class="tools-showcase">
+        <div class="container">
+            <h2 class="animate-on-scroll">The Microsoft 365 Tools We Optimize</h2>
+            <div class="tools-grid">
+                <div class="tool-card sharepoint animate-on-scroll">
+                    <img src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20251008.001/assets/brand-icons/product/svg/sharepoint_48x1.svg"
+                         alt="SharePoint logo"
+                         class="tool-icon"
+                        width="64"
+                        height="64"
+                         loading="lazy">
+                    <h3 class="tool-name">SharePoint</h3>
+                    <p class="tool-description">We organize your files so teams find what they need fast</p>
+                </div>
+                <div class="tool-card onedrive animate-on-scroll">
+                    <img src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20251008.001/assets/brand-icons/product/svg/onedrive_48x1.svg"
+                         alt="OneDrive logo"
+                         class="tool-icon"
+                        width="64"
+                        height="64"
+                         loading="lazy">
+                    <h3 class="tool-name">OneDrive</h3>
+                    <p class="tool-description">We secure your data and enable seamless file access anywhere</p>
+                </div>
+                <div class="tool-card teams animate-on-scroll">
+                    <img src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20251008.001/assets/brand-icons/product/svg/teams_48x1.svg"
+                         alt="Microsoft Teams logo"
+                         class="tool-icon"
+                        width="64"
+                        height="64"
+                         loading="lazy">
+                    <h3 class="tool-name">Teams</h3>
+                    <p class="tool-description">We streamline collaboration so meetings and chats stay productive</p>
+                </div>
+                <div class="tool-card intune animate-on-scroll">
+                    <img src="https://www.microsoft.com/content/dam/microsoft/bade/images/photography/en-us/1069395-products-intune-icon-50x50.png"
+                         alt="Microsoft Intune logo"
+                         class="tool-icon"
+                        width="64"
+                        height="64"
+                         loading="lazy">
+                    <h3 class="tool-name">Intune</h3>
+                    <p class="tool-description">We protect your devices from threats and security risks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="problem-watermark">X</div>
+        <div class="container">
+            <div class="problem-content animate-on-scroll">
+                <h2>You're Paying for Tools You Don't Use</h2>
+                <p class="problem-text">
+                    Most small businesses waste money on Microsoft 365. They pay every month. But they only use email and maybe Word. The rest sits there. Unused. Collecting dust.
+                </p>
+                <p class="problem-text">Meanwhile, your team:</p>
+                <ul class="problem-list">
+                    <li class="animate-on-scroll">
+                        <span class="problem-number">01</span>
+                        <span>Wastes time searching for files</span>
+                    </li>
+                    <li class="animate-on-scroll">
+                        <span class="problem-number">02</span>
+                        <span>Sends too many emails back and forth</span>
+                    </li>
+                    <li class="animate-on-scroll">
+                        <span class="problem-number">03</span>
+                        <span>Works harder than they need to</span>
+                    </li>
+                    <li class="animate-on-scroll">
+                        <span class="problem-number">04</span>
+                        <span>Stays open to hackers and scams</span>
+                    </li>
+                </ul>
+                <p class="problem-text">Sound familiar?</p>
+                <p class="problem-closing">It doesn't have to be this way.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Get More Done. Stay Safe. Save Money.</h2>
+                <p>We set up Microsoft 365 the right way. So your team works smarter. And your business stays protected.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3>Work Faster</h3>
+                    <p>Find files in seconds. Share documents without confusion. Your team finishes work in less time.</p>
+                </div>
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3>Save Money</h3>
+                    <p>Stop paying for tools that sit unused. We unlock features you already have. No extra software needed.</p>
+                </div>
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Stay Safe</h3>
+                    <p>Block spam. Stop hackers. Keep your business data protected. Sleep better at night.</p>
+                </div>
+            </div>
+            <div class="section-cta animate-on-scroll">
+                <a href="https://outlook.office.com/book/FreeConsultations@cloudbearconsulting.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOK YOUR FREE CALL</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credibility Section -->
+    <section class="credibility">
+        <div class="container">
+            <div class="credibility-inner">
+                <div class="credibility-content animate-on-scroll">
+                    <h2>20 Years of IT Experience. Working for You.</h2>
+                    <p>We've spent two decades helping businesses like yours.</p>
+                    <p>We know what works. We know what doesn't.</p>
+                    <p>And we don't speak in tech jargon. We speak plain English.</p>
+                    <p>You tell us your problems. We fix them. Simple as that.</p>
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1" y="1" width="22" height="22" fill="#F25022"/>
+                            <rect x="25" y="1" width="22" height="22" fill="#7FBA00"/>
+                            <rect x="1" y="25" width="22" height="22" fill="#00A4EF"/>
+                            <rect x="25" y="25" width="22" height="22" fill="#FFB900"/>
+                        </svg>
+                        <span>Microsoft Certified Partner</span>
+                    </div>
+                </div>
+                <div class="credibility-visual animate-on-scroll">
+                    <div class="credibility-card">
+                        <div class="years-number" data-target="20">0+</div>
+                        <div class="years-label">Years of IT Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Three Steps to Microsoft 365 Success</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line">
+                    <div class="timeline-progress"></div>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card animate-on-scroll">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Book a Free Call</h3>
+                            <p>Tell us what's frustrating you. We'll listen. No sales pitch. Just a real conversation about your needs.</p>
+                        </div>
+                    </div>
+                    <div class="step-card animate-on-scroll">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>We Optimize Your Setup</h3>
+                            <p>We find what's broken. We fix it. We set everything up the right way for your team.</p>
+                        </div>
+                    </div>
+                    <div class="step-card animate-on-scroll">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>See Results in 30 Days</h3>
+                            <p>Watch your team work faster. See your business stay safer. Feel confident in your investment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta animate-on-scroll" style="margin-top: 64px;">
+                <a href="https://outlook.office.com/book/FreeConsultations@cloudbearconsulting.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOK YOUR FREE CALL</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get -->
+    <section class="what-you-get">
+        <div class="container">
+            <h2 class="animate-on-scroll">Here's What Changes When You Work With Us</h2>
+            <div class="benefits-list">
+                <div class="benefit-item animate-on-scroll">
+                    <div class="benefit-check">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <span>Your team finds files in seconds (not minutes)</span>
+                </div>
+                <div class="benefit-item animate-on-scroll">
+                    <div class="benefit-check">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <span>Everyone knows where to save their work</span>
+                </div>
+                <div class="benefit-item animate-on-scroll">
+                    <div class="benefit-check">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <span>Meetings run smoother with Teams set up right</span>
+                </div>
+                <div class="benefit-item animate-on-scroll">
+                    <div class="benefit-check">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <span>Hackers and spam get blocked automatically</span>
+                </div>
+                <div class="benefit-item animate-on-scroll">
+                    <div class="benefit-check">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <span>You stop paying for tools you don't use</span>
+                </div>
+                <div class="benefit-item animate-on-scroll">
+                    <div class="benefit-check">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <span>New employees get set up fast</span>
+                </div>
+                <div class="benefit-item animate-on-scroll">
+                    <div class="benefit-check">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <span>Your data stays safe and backed up</span>
+                </div>
+            </div>
+            <div class="section-cta animate-on-scroll">
+                <a href="https://outlook.office.com/book/FreeConsultations@cloudbearconsulting.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOK YOUR FREE CALL</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Questions? We Have Answers.</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        How much does this cost?
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Every business is different. That's why we start with a free call. We'll learn about your needs and give you a clear price. No surprises. No hidden fees.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        How long does the setup take?
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Most projects take 1-2 weeks. You'll see results in 30 days or less. We work fast so you don't wait.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        Will this disrupt my team's work?
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            No. We do most of the work in the background. Your team keeps working while we make things better.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        What if it doesn't work for us?
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            We guarantee ROI in 30 days. If you don't see results, we'll make it right. Your success is our success.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        Do we need to buy new software?
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            No. We use the tools you already pay for. That's the point. You're already paying for Microsoft 365. Let's make it work for you.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="book-call">
+        <div class="container">
+            <h2 class="animate-on-scroll">Ready to Stop Wasting Money on Microsoft 365?</h2>
+            <p class="animate-on-scroll">Book your free call today. It takes 30 minutes. No pressure. No sales pitch. Just a simple conversation about how we can help.</p>
+            <a href="https://outlook.office.com/book/FreeConsultations@cloudbearconsulting.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primary animate-on-scroll">BOOK YOUR FREE CALL</a>
+            <p class="final-support animate-on-scroll">Free consultation. No obligation. Real answers.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="./CloudBearConsulting Logo/Font logo Png/Font logo BgGr.png" alt="Cloud Bear Consulting Logo">
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <a href="mailto:enquiries@cloudbearconsulting.com" class="footer-email">enquiries@cloudbearconsulting.com</a>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" fill="currentColor"/>
+                                <rect x="2" y="9" width="4" height="12" fill="currentColor"/>
+                                <circle cx="4" cy="4" r="2" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2025 Cloud Bear Consulting. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isActive = item.classList.contains('active');
+
+                // Close all other items
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Scroll Animation Observer (with staggered delays)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Add staggered delay for list items
+                    const siblings = entry.target.parentElement.querySelectorAll('.animate-on-scroll');
+                    const siblingIndex = Array.from(siblings).indexOf(entry.target);
+
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, siblingIndex * 100);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header scroll effect
+        const header = document.querySelector('.header');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > 100) {
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+
+            lastScroll = currentScroll;
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animated counter for years
+        const yearsNumber = document.querySelector('.years-number');
+        let counted = false;
+
+        const countObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !counted) {
+                    counted = true;
+                    const target = parseInt(yearsNumber.dataset.target);
+                    let current = 0;
+                    const duration = 2000;
+                    const step = target / (duration / 16);
+
+                    const counter = setInterval(() => {
+                        current += step;
+                        if (current >= target) {
+                            yearsNumber.textContent = target + '+';
+                            clearInterval(counter);
+                        } else {
+                            yearsNumber.textContent = Math.floor(current) + '+';
+                        }
+                    }, 16);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        countObserver.observe(yearsNumber);
+
+        // Timeline progress animation
+        const timeline = document.querySelector('.timeline');
+        const timelineProgress = document.querySelector('.timeline-progress');
+
+        if (timeline && timelineProgress) {
+            const timelineObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            timelineProgress.style.width = '100%';
+                        }, 500);
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            timelineObserver.observe(timeline);
+        }
+    </script>
+</body>
+</html>
