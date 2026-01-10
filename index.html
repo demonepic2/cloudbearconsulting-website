@@ -589,7 +589,8 @@
         }
 
         .certs-block {
-            margin-top: 20px;
+            margin-top: 24px;
+            max-width: 720px;
         }
 
         .certs-title {
@@ -603,43 +604,64 @@
         .certs-grid {
             list-style: none;
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 14px;
+            grid-template-columns: 1fr;
+            gap: 18px;
             padding: 0;
-            margin: 14px 0 0;
+            margin: 16px 0 0;
         }
 
         .cert-card {
             display: flex;
-            gap: 12px;
+            gap: 14px;
             align-items: flex-start;
-            padding: 14px 16px;
-            border: 1px solid rgba(0,0,0,0.06);
-            background: var(--white);
+            padding: 18px 18px;
+            border: 0;
+            background: rgba(255, 255, 255, 0.92);
             border-radius: 4px;
-            box-shadow: var(--shadow-sm);
+            box-shadow: 0 10px 26px rgba(0,0,0,0.08);
             text-align: left;
         }
 
         .cert-icon {
-            width: 32px;
-            height: 32px;
-            flex: 0 0 32px;
-            border-radius: 6px;
-            background: var(--background-alt);
+            width: 40px;
+            height: 40px;
+            flex: 0 0 40px;
+            border-radius: 10px;
+            background: rgba(66, 91, 118, 0.08);
+            color: var(--accent-dark);
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
         .cert-icon svg {
-            width: 18px;
-            height: 18px;
-            stroke: var(--accent);
+            width: 20px;
+            height: 20px;
+            stroke: currentColor;
+        }
+
+        .cert-card.teams .cert-icon {
+            background: rgba(91, 95, 199, 0.14);
+            color: #5B5FC7;
+        }
+
+        .cert-card.ai .cert-icon {
+            background: rgba(0, 164, 239, 0.14);
+            color: #00A4EF;
+        }
+
+        .cert-card.security .cert-icon {
+            background: rgba(255, 204, 42, 0.22);
+            color: #8A6D00;
+        }
+
+        .cert-card.fundamentals .cert-icon {
+            background: rgba(66, 91, 118, 0.10);
+            color: var(--accent-dark);
         }
 
         .cert-name {
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 700;
             color: var(--text-primary);
             line-height: 1.35;
@@ -1147,9 +1169,9 @@
 
             .certs-grid {
                 grid-template-columns: 1fr;
-                max-width: 560px;
-                margin-left: auto;
-                margin-right: auto;
+                max-width: 100%;
+                margin-left: 0;
+                margin-right: 0;
             }
 
             .credibility-visual {
@@ -1424,10 +1446,12 @@
                     <div class="certs-block">
                         <div class="certs-title">Microsoft Certifications</div>
                         <ul class="certs-grid" role="list">
-                            <li class="cert-card">
+                            <li class="cert-card teams">
                                 <div class="cert-icon" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M20 6L9 17l-5-5" />
+                                        <path d="M21 12a4 4 0 0 1-4 4H9l-5 3V6a4 4 0 0 1 4-4h9a4 4 0 0 1 4 4z" />
+                                        <path d="M8 8h8" />
+                                        <path d="M8 11h6" />
                                     </svg>
                                 </div>
                                 <div>
@@ -1435,10 +1459,11 @@
                                     <div class="cert-meta">Associate</div>
                                 </div>
                             </li>
-                            <li class="cert-card">
+                            <li class="cert-card ai">
                                 <div class="cert-icon" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M20 6L9 17l-5-5" />
+                                        <path d="M12 2l1.8 5.8L20 10l-6.2 2.2L12 18l-1.8-5.8L4 10l6.2-2.2L12 2z" />
+                                        <path d="M4 20h16" />
                                     </svg>
                                 </div>
                                 <div>
@@ -1446,10 +1471,11 @@
                                     <div class="cert-meta">Fundamentals</div>
                                 </div>
                             </li>
-                            <li class="cert-card">
+                            <li class="cert-card security">
                                 <div class="cert-icon" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M20 6L9 17l-5-5" />
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                        <path d="M9 12l2 2 4-5" />
                                     </svg>
                                 </div>
                                 <div>
@@ -1457,10 +1483,12 @@
                                     <div class="cert-meta">Fundamentals</div>
                                 </div>
                             </li>
-                            <li class="cert-card">
+                            <li class="cert-card fundamentals">
                                 <div class="cert-icon" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M20 6L9 17l-5-5" />
+                                        <path d="M4 19a2 2 0 0 0 2 2h14" />
+                                        <path d="M4 4a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2z" />
+                                        <path d="M8 7h8" />
                                     </svg>
                                 </div>
                                 <div>
