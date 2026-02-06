@@ -4,136 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloud Bear Consulting | Stop Wasting Money on Microsoft 365</title>
+    <meta name="description" content="Cloud Bear Consulting helps small businesses and non-profits get real results from Microsoft 365. SharePoint, Teams, Intune, and security — optimized by a certified consultant.">
+    <link rel="canonical" href="https://www.cloudbearconsulting.com/">
+    <link rel="icon" href="/favicon.ico">
+    <meta property="og:title" content="Cloud Bear Consulting | Stop Wasting Money on Microsoft 365">
+    <meta property="og:description" content="We help small businesses and non-profits get real results from Microsoft 365. SharePoint, Teams, Intune, and security — optimized by a certified consultant.">
+    <meta property="og:url" content="https://www.cloudbearconsulting.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Cloud Bear Consulting">
+    <meta name="twitter:card" content="summary">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
     <style>
-        :root {
-            --primary: #FFCC2A;
-            --primary-hover: #E6B800;
-            --primary-glow: rgba(255, 204, 42, 0.3);
-            --accent: #425B76;
-            --accent-dark: #374A5E;
-            --accent-light: #5A7A9A;
-            --background: #FFFFFF;
-            --background-alt: #F8F9FA;
-            --text-primary: #1A1A1A;
-            --text-secondary: #4A5568;
-            --text-light: #718096;
-            --white: #FFFFFF;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-            --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
-            --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
-            --shadow-xl: 0 20px 50px rgba(0,0,0,0.15);
-            --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 18px;
-            line-height: 1.7;
-            color: var(--text-primary);
-            background: var(--background);
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3, h4 {
-            font-family: 'DM Serif Display', serif;
-            font-weight: 400;
-            line-height: 1.2;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        /* Button Styles */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 18px 40px;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 17px;
-            font-weight: 600;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s var(--transition-smooth);
-        }
-
-        .btn-primary {
-            background: var(--primary);
-            color: var(--text-primary);
-            box-shadow: var(--shadow-md), 0 0 0 0 rgba(255, 204, 42, 0.4);
-        }
-
-        .btn-primary:hover {
-            background: var(--primary-hover);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg), 0 0 0 4px rgba(255, 204, 42, 0.2);
-        }
-
-        .btn-secondary {
-            background: var(--accent);
-            color: var(--white);
-        }
-
-        .btn-secondary:hover {
-            background: var(--accent-light);
-            transform: translateY(-2px);
-        }
-
-        /* ==================== */
-        /* HEADER (ORIGINAL)    */
-        /* ==================== */
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0,0,0,0.05);
-            padding: 16px 0;
-            transition: all 0.3s ease;
-        }
-
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-        }
-
-        .logo img {
-            height: 50px;
-            width: auto;
-        }
-
-        .header .btn {
-            padding: 12px 28px;
-            font-size: 15px;
-        }
-
         /* ==================== */
         /* HERO (ORIGINAL)      */
         /* ==================== */
@@ -1032,116 +916,6 @@
         }
 
         /* ==================== */
-        /* FOOTER (ORIGINAL)    */
-        /* ==================== */
-        .footer {
-            padding: 48px 0;
-            background: #363435;
-            color: var(--white);
-        }
-
-        .footer-inner {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 20px;
-        }
-
-        .footer-brand {
-            margin-bottom: 4px;
-        }
-
-        .footer-logo img {
-            height: 120px;
-            width: auto;
-            display: block;
-        }
-
-        .footer-contact {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 16px;
-        }
-
-        .footer-email {
-            color: var(--white);
-            text-decoration: none;
-            font-size: 15px;
-            opacity: 0.8;
-            transition: opacity 0.3s ease;
-            display: block;
-        }
-
-        .footer-email:hover {
-            opacity: 1;
-        }
-
-        .footer-social a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: transparent;
-            border-radius: 4px;
-            transition: opacity 0.3s ease;
-        }
-
-        .footer-social a:hover {
-            opacity: 0.7;
-        }
-
-        .footer-social svg {
-            width: 28px;
-            height: 28px;
-            fill: var(--white);
-        }
-
-        .footer-bottom {
-            margin-top: 32px;
-            padding-top: 24px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            text-align: left;
-            font-size: 14px;
-            opacity: 0.6;
-        }
-
-        /* ==================== */
-        /* ANIMATIONS           */
-        /* ==================== */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: all 0.8s var(--transition-smooth);
-        }
-
-        .animate-on-scroll.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* ==================== */
         /* RESPONSIVE           */
         /* ==================== */
         @media (max-width: 1024px) {
@@ -1192,15 +966,6 @@
         }
 
         @media (max-width: 768px) {
-            .header .btn {
-                padding: 10px 20px;
-                font-size: 14px;
-            }
-
-            .logo img {
-                height: 40px;
-            }
-
             .hero {
                 padding: 120px 0 80px;
             }
@@ -1230,10 +995,6 @@
             .final-cta {
                 padding: 100px 0;
             }
-
-            .footer-logo img {
-                height: 100px;
-            }
         }
 
         @media (max-width: 640px) {
@@ -1243,42 +1004,8 @@
         }
 
         @media (max-width: 480px) {
-            .header {
-                padding: 12px 0;
-            }
-
-            .header-inner {
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                gap: 12px;
-            }
-
-            .logo img {
-                height: 34px;
-            }
-
-            .header .btn {
-                flex: 1 1 100%;
-                width: 100%;
-                padding: 12px 20px;
-                font-size: 14px;
-            }
-
             .hero {
                 padding: 170px 0 80px;
-            }
-
-            body {
-                font-size: 16px;
-            }
-
-            .container {
-                padding: 0 16px;
-            }
-
-            .btn {
-                width: 100%;
-                padding: 16px 32px;
             }
 
             .hero-content {
@@ -1297,13 +1024,89 @@
             }
         }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Cloud Bear Consulting",
+      "description": "Microsoft 365 consulting for small businesses and non-profits. SharePoint, Teams, Intune, and security optimization.",
+      "url": "https://www.cloudbearconsulting.com",
+      "email": "enquiries@cloudbearconsulting.com",
+      "sameAs": [
+        "https://www.linkedin.com/company/cloud-bear-consulting-inc/"
+      ],
+      "serviceType": [
+        "Microsoft 365 Consulting",
+        "SharePoint Administration",
+        "Microsoft Teams Administration",
+        "Microsoft Intune Management",
+        "IT Security Consulting"
+      ],
+      "knowsAbout": [
+        "Microsoft 365",
+        "SharePoint Online",
+        "Microsoft Teams",
+        "Microsoft Intune",
+        "Microsoft Entra ID",
+        "Exchange Online"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does this cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every business is different. That's why we start with a free call. We'll learn about your needs and give you a clear price. No surprises. No hidden fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does the setup take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most projects take 1-2 weeks. You'll see results in 30 days or less. We work fast so you don't wait."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will this disrupt my team's work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We do most of the work in the background. Your team keeps working while we make things better."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if it doesn't work for us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We guarantee improvements in 30 days. If you don't see results, we'll make it right. Your success is our success."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do we need to buy new software?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We use the tools you already pay for. That's the point. You're already paying for Microsoft 365. Let's make it work for you."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-inner">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="./CloudBearConsulting Logo/Font logo Png/Font logo Bg0.png" alt="Cloud Bear Consulting Logo">
                 </a>
                 <a href="https://outlook.office.com/book/FreeConsultations@cloudbearconsulting.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOK YOUR FREE CALL</a>
@@ -1477,7 +1280,7 @@
                         <ul class="certs-grid" role="list">
                             <li class="cert-card">
                                 <div class="cert-icon" aria-hidden="true">
-                                    <img class="cert-badge" loading="lazy" decoding="async" alt="MS-700 badge" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg" />
+                                    <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="MS-700 badge" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg" />
                                 </div>
                                 <div>
                                     <div class="cert-name"><span class="cert-code">MS-700</span>Microsoft 365 Certified: Teams Administrator Associate</div>
@@ -1486,7 +1289,7 @@
                             </li>
                             <li class="cert-card">
                                 <div class="cert-icon" aria-hidden="true">
-                                    <img class="cert-badge" loading="lazy" decoding="async" alt="AI-900 badge" src="https://images.credly.com/size/680x680/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png" />
+                                    <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="AI-900 badge" src="https://images.credly.com/size/680x680/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png" />
                                 </div>
                                 <div>
                                     <div class="cert-name"><span class="cert-code">AI-900</span>Microsoft Certified: Azure AI Fundamentals</div>
@@ -1495,7 +1298,7 @@
                             </li>
                             <li class="cert-card">
                                 <div class="cert-icon" aria-hidden="true">
-                                    <img class="cert-badge" loading="lazy" decoding="async" alt="SC-900 badge" src="https://images.credly.com/size/680x680/images/fc1352af-87fa-4947-ba54-398a0e63322e/security-compliance-and-identity-fundamentals-600x600.png" />
+                                    <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="SC-900 badge" src="https://images.credly.com/size/680x680/images/fc1352af-87fa-4947-ba54-398a0e63322e/security-compliance-and-identity-fundamentals-600x600.png" />
                                 </div>
                                 <div>
                                     <div class="cert-name"><span class="cert-code">SC-900</span>Microsoft Certified: Security, Compliance, and Identity Fundamentals</div>
@@ -1504,7 +1307,7 @@
                             </li>
                             <li class="cert-card">
                                 <div class="cert-icon" aria-hidden="true">
-                                    <img class="cert-badge" loading="lazy" decoding="async" alt="MS-900 badge" src="https://images.credly.com/size/680x680/images/0c6d9839-f468-4adc-987d-5cfae4a9ee67/image.png" />
+                                    <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="MS-900 badge" src="https://images.credly.com/size/680x680/images/0c6d9839-f468-4adc-987d-5cfae4a9ee67/image.png" />
                                 </div>
                                 <div>
                                     <div class="cert-name"><span class="cert-code">MS-900</span>Microsoft 365 Certified: Fundamentals</div>
@@ -1513,7 +1316,7 @@
                             </li>
                             <li class="cert-card">
                                 <div class="cert-icon" aria-hidden="true">
-                                    <img class="cert-badge" loading="lazy" decoding="async" alt="AB-900 badge" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg" />
+                                    <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="AB-900 badge" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg" />
                                 </div>
                                 <div>
                                     <div class="cert-name"><span class="cert-code">AB-900</span>Microsoft 365 Certified: Copilot and Agent Administration Fundamentals</div>
@@ -1522,7 +1325,7 @@
                             </li>
                             <li class="cert-card">
                                 <div class="cert-icon" aria-hidden="true">
-                                    <img class="cert-badge" loading="lazy" decoding="async" alt="AB-730 badge" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/ai-business-professional.svg" />
+                                    <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="AB-730 badge" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/ai-business-professional.svg" />
                                 </div>
                                 <div>
                                     <div class="cert-name"><span class="cert-code">AB-730</span>Microsoft Certified: AI Business Professional</div>
@@ -1531,7 +1334,7 @@
                             </li>
                             <li class="cert-card">
                                 <div class="cert-icon" aria-hidden="true">
-                                    <img class="cert-badge" loading="lazy" decoding="async" alt="AB-731 badge" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/ai-transformation-leader.svg" />
+                                    <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="AB-731 badge" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/ai-transformation-leader.svg" />
                                 </div>
                                 <div>
                                     <div class="cert-name"><span class="cert-code">AB-731</span>Microsoft Certified: AI Transformation Leader</div>
