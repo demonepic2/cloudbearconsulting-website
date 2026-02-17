@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Bear Consulting | Microsoft 365 Services We Optimize</title>
+    <meta name="description" content="Cloud Bear Consulting optimizes SharePoint, OneDrive, Teams, and Intune for small businesses and non-profits. See exactly what we do and how we help.">
+    <link rel="canonical" href="https://www.cloudbearconsulting.com/services.html">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <meta property="og:title" content="Cloud Bear Consulting | Microsoft 365 Services">
+    <meta property="og:description" content="We optimize SharePoint, OneDrive, Teams, and Intune for small businesses and non-profits. See what we do.">
+    <meta property="og:url" content="https://www.cloudbearconsulting.com/services.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Cloud Bear Consulting">
+    <meta property="og:image" content="https://www.cloudbearconsulting.com/og-image-generator.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        /* ==================== */
+        /* PAGE HEADER          */
+        /* ==================== */
+        .page-header {
+            padding: 160px 0 80px;
+            background: linear-gradient(135deg, #425B76 0%, #374A5E 100%);
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .page-header h1 {
+            font-size: clamp(36px, 5vw, 52px);
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-header p {
+            font-size: 20px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ==================== */
+        /* TOOLS SHOWCASE       */
+        /* ==================== */
+        .tools-showcase {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tool-card {
+            background: var(--white);
+            padding: 40px 32px;
+            border-radius: 4px;
+            border: 1px solid rgba(0,0,0,0.06);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tool-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--primary);
+            transform: scaleY(0);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+
+        .tool-card:hover::before {
+            transform: scaleY(1);
+        }
+
+        .tool-card.sharepoint:hover::before { background: #0078D4; }
+        .tool-card.onedrive:hover::before { background: #0364B8; }
+        .tool-card.teams:hover::before { background: #5B5FC7; }
+        .tool-card.intune:hover::before { background: #00A4EF; }
+
+        .tool-icon {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .tool-name {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .tool-description {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ==================== */
+        /* CERTIFICATIONS       */
+        /* ==================== */
+        .certifications {
+            padding: 100px 0;
+            background: var(--background-alt);
+        }
+
+        .certifications h2 {
+            font-size: clamp(32px, 4vw, 44px);
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .certs-grid {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 18px;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 720px;
+        }
+
+        .cert-card {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            padding: 18px;
+            border: 0;
+            background: var(--white);
+            border-radius: 4px;
+            box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+
+        .cert-icon {
+            width: 40px;
+            height: 40px;
+            flex: 0 0 40px;
+            border-radius: 10px;
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 4px;
+            box-shadow: 0 10px 22px rgba(0,0,0,0.10);
+        }
+
+        .cert-badge {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .cert-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.35;
+            margin-bottom: 2px;
+        }
+
+        .cert-code {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 999px;
+            background: rgba(66, 91, 118, 0.10);
+            color: #374A5E;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            margin-right: 10px;
+            transform: translateY(-1px);
+        }
+
+        .cert-meta {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.35;
+        }
+
+        /* ==================== */
+        /* FINAL CTA            */
+        /* ==================== */
+        .final-cta {
+            padding: 140px 0;
+            background: var(--accent, #425B76);
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .final-cta .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .final-cta h2 {
+            font-size: clamp(36px, 5vw, 52px);
+            margin-bottom: 24px;
+        }
+
+        .final-cta p {
+            font-size: 20px;
+            opacity: 0.9;
+            margin-bottom: 48px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .final-cta .btn-primary {
+            font-size: 19px;
+            padding: 22px 52px;
+        }
+
+        .final-support {
+            margin-top: 24px;
+            font-size: 15px;
+            opacity: 0.7;
+        }
+
+        /* ==================== */
+        /* RESPONSIVE           */
+        /* ==================== */
+        @media (max-width: 768px) {
+            .tools-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .page-header {
+                padding: 140px 0 60px;
+            }
+
+            .tools-showcase,
+            .certifications {
+                padding: 80px 0;
+            }
+
+            .final-cta {
+                padding: 100px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tool-card {
+                padding: 32px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <img src="./CloudBearConsulting Logo/Font logo Png/Font logo Bg0.png" alt="Cloud Bear Consulting Logo">
+                </a>
+                <a href="https://outlook.office.com/book/FreeConsultations@cloudbearconsulting.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOK YOUR FREE CALL</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>The Microsoft 365 Services We Optimize</h1>
+            <p>Your subscription already includes powerful tools. We set them up so they actually work for your team.</p>
+        </div>
+    </section>
+
+    <!-- Tools Showcase -->
+    <section class="tools-showcase">
+        <div class="container">
+            <div class="tools-grid">
+                <div class="tool-card sharepoint">
+                    <img src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20251008.001/assets/brand-icons/product/svg/sharepoint_48x1.svg"
+                         alt="SharePoint logo"
+                         class="tool-icon"
+                         width="64"
+                         height="64"
+                         loading="lazy">
+                    <h3 class="tool-name">SharePoint</h3>
+                    <p class="tool-description">Your team has files in email, desktops, and shared drives nobody remembers. We put them in one place with a search that actually works.</p>
+                </div>
+                <div class="tool-card onedrive">
+                    <img src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20251008.001/assets/brand-icons/product/svg/onedrive_48x1.svg"
+                         alt="OneDrive logo"
+                         class="tool-icon"
+                         width="64"
+                         height="64"
+                         loading="lazy">
+                    <h3 class="tool-name">OneDrive</h3>
+                    <p class="tool-description">Right now if an employee's laptop dies, their files die with it. We make every file auto-save to the cloud so nothing is ever lost.</p>
+                </div>
+                <div class="tool-card teams">
+                    <img src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20251008.001/assets/brand-icons/product/svg/teams_48x1.svg"
+                         alt="Microsoft Teams logo"
+                         class="tool-icon"
+                         width="64"
+                         height="64"
+                         loading="lazy">
+                    <h3 class="tool-name">Teams</h3>
+                    <p class="tool-description">Your team emails a file, someone edits it, emails it back, and now there are four versions. We set up Teams so everyone edits the same document at the same time.</p>
+                </div>
+                <div class="tool-card intune">
+                    <img src="https://www.microsoft.com/content/dam/microsoft/bade/images/photography/en-us/1069395-products-intune-icon-50x50.png"
+                         alt="Microsoft Intune logo"
+                         class="tool-icon"
+                         width="64"
+                         height="64"
+                         loading="lazy">
+                    <h3 class="tool-name">Intune</h3>
+                    <p class="tool-description">An employee loses their phone with company email on it. Can you wipe it remotely right now? We make sure the answer is yes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="certifications">
+        <div class="container">
+            <h2>Microsoft Certifications</h2>
+            <ul class="certs-grid" role="list">
+                <li class="cert-card">
+                    <div class="cert-icon" aria-hidden="true">
+                        <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="MS-700 badge" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg" />
+                    </div>
+                    <div>
+                        <div class="cert-name"><span class="cert-code">MS-700</span>Microsoft 365 Certified: Teams Administrator Associate</div>
+                        <div class="cert-meta">Associate</div>
+                    </div>
+                </li>
+                <li class="cert-card">
+                    <div class="cert-icon" aria-hidden="true">
+                        <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="AI-900 badge" src="https://images.credly.com/size/680x680/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png" />
+                    </div>
+                    <div>
+                        <div class="cert-name"><span class="cert-code">AI-900</span>Microsoft Certified: Azure AI Fundamentals</div>
+                        <div class="cert-meta">Fundamentals</div>
+                    </div>
+                </li>
+                <li class="cert-card">
+                    <div class="cert-icon" aria-hidden="true">
+                        <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="SC-900 badge" src="https://images.credly.com/size/680x680/images/fc1352af-87fa-4947-ba54-398a0e63322e/security-compliance-and-identity-fundamentals-600x600.png" />
+                    </div>
+                    <div>
+                        <div class="cert-name"><span class="cert-code">SC-900</span>Microsoft Certified: Security, Compliance, and Identity Fundamentals</div>
+                        <div class="cert-meta">Fundamentals</div>
+                    </div>
+                </li>
+                <li class="cert-card">
+                    <div class="cert-icon" aria-hidden="true">
+                        <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="MS-900 badge" src="https://images.credly.com/size/680x680/images/0c6d9839-f468-4adc-987d-5cfae4a9ee67/image.png" />
+                    </div>
+                    <div>
+                        <div class="cert-name"><span class="cert-code">MS-900</span>Microsoft 365 Certified: Fundamentals</div>
+                        <div class="cert-meta">Fundamentals</div>
+                    </div>
+                </li>
+                <li class="cert-card">
+                    <div class="cert-icon" aria-hidden="true">
+                        <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="AB-900 badge" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg" />
+                    </div>
+                    <div>
+                        <div class="cert-name"><span class="cert-code">AB-900</span>Microsoft 365 Certified: Copilot and Agent Administration Fundamentals</div>
+                        <div class="cert-meta">Fundamentals</div>
+                    </div>
+                </li>
+                <li class="cert-card">
+                    <div class="cert-icon" aria-hidden="true">
+                        <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="AB-730 badge" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/ai-business-professional.svg" />
+                    </div>
+                    <div>
+                        <div class="cert-name"><span class="cert-code">AB-730</span>Microsoft Certified: AI Business Professional</div>
+                        <div class="cert-meta">Professional</div>
+                    </div>
+                </li>
+                <li class="cert-card">
+                    <div class="cert-icon" aria-hidden="true">
+                        <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="AB-731 badge" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/ai-transformation-leader.svg" />
+                    </div>
+                    <div>
+                        <div class="cert-name"><span class="cert-code">AB-731</span>Microsoft Certified: AI Transformation Leader</div>
+                        <div class="cert-meta">Leader</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="book-call">
+        <div class="container">
+            <h2>Ready to Get More From Microsoft 365?</h2>
+            <p>Book a free 30-minute call. We'll look at your current setup and tell you exactly what you're not using.</p>
+            <a href="https://outlook.office.com/book/FreeConsultations@cloudbearconsulting.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOK YOUR FREE CALL</a>
+            <p class="final-support">Free consultation. No obligation. Real answers.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="./CloudBearConsulting Logo/Font logo Png/Font logo BgGr.png" alt="Cloud Bear Consulting Logo">
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <a href="mailto:enquiries@cloudbearconsulting.com" class="footer-email">enquiries@cloudbearconsulting.com</a>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/company/cloud-bear-consulting-inc/?viewAsMember=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" fill="currentColor"/>
+                                <rect x="2" y="9" width="4" height="12" fill="currentColor"/>
+                                <circle cx="4" cy="4" r="2" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Cloud Bear Consulting. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 100) {
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
