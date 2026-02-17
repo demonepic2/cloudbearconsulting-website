@@ -20,6 +20,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="shared.css">
+    <!-- MailerLite Universal -->
+    <script>
+        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        ml('account', '2119062');
+    </script>
+    <!-- End MailerLite Universal -->
     <style>
         /* ==================== */
         /* HERO (ORIGINAL)      */
@@ -325,6 +334,48 @@
             font-weight: 500;
             margin-top: 40px;
             color: var(--primary);
+        }
+
+        /* ==================== */
+        /* CHECKLIST CTA        */
+        /* ==================== */
+        .checklist-cta {
+            padding: 0 0 56px 0;
+            margin-top: -40px;
+            background: var(--background-alt);
+        }
+
+        .checklist-cta-inner {
+            max-width: 640px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .checklist-cta-inner h2 {
+            font-size: clamp(28px, 4vw, 40px);
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .checklist-cta-inner p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .checklist-cta-inner p strong {
+            color: var(--accent);
+        }
+
+        .ml-embedded {
+            margin-top: 24px;
+        }
+
+        .ml-embedded input[type="text"],
+        .ml-embedded input[type="email"] {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 16px;
         }
 
         /* ==================== */
@@ -1538,6 +1589,17 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Checklist Lead Generator -->
+    <section class="checklist-cta" id="free-checklist">
+        <div class="container">
+            <div class="checklist-cta-inner animate-on-scroll">
+                <h2>Not Ready to Talk Yet? Start Here.</h2>
+                <p>Get our free checklist: <strong>7 Microsoft 365 Features You're Paying For But Probably Haven't Turned On.</strong> Quick read. No fluff. Each feature includes a 30-second check so you can see what you're missing.</p>
+                <div class="ml-embedded" data-form="mHXpol"></div>
             </div>
         </div>
     </section>
