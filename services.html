@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Bear Consulting | Microsoft 365 Services We Optimize</title>
-    <meta name="description" content="Cloud Bear Consulting optimizes SharePoint, OneDrive, Teams, and Intune for small businesses and non-profits. See exactly what we do and how we help.">
+    <title>Cloud Bear Consulting | Microsoft 365 Security &amp; Optimization Services</title>
+    <meta name="description" content="Cloud Bear Consulting secures and optimizes Microsoft 365 for small businesses. Security assessments, Copilot readiness, identity cleanup, licensing optimization, and ongoing security management.">
     <link rel="canonical" href="https://www.cloudbearconsulting.com/services.html">
     <link rel="icon" href="/favicon.png" type="image/png">
-    <meta property="og:title" content="Cloud Bear Consulting | Microsoft 365 Services">
-    <meta property="og:description" content="We optimize SharePoint, OneDrive, Teams, and Intune for small businesses and non-profits. See what we do.">
+    <meta property="og:title" content="Cloud Bear Consulting | Microsoft 365 Security &amp; Optimization Services">
+    <meta property="og:description" content="Cloud Bear Consulting secures and optimizes Microsoft 365 for small businesses. Security assessments, Copilot readiness, identity cleanup, licensing optimization, and ongoing security management.">
     <meta property="og:url" content="https://www.cloudbearconsulting.com/services.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Cloud Bear Consulting">
@@ -55,10 +55,156 @@
         .page-header p {
             font-size: 20px;
             opacity: 0.9;
-            max-width: 600px;
+            max-width: 640px;
             margin: 0 auto;
             position: relative;
             z-index: 1;
+            line-height: 1.6;
+        }
+
+        /* ==================== */
+        /* SERVICE OFFERINGS    */
+        /* ==================== */
+        .offering {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .offering-alt {
+            background: var(--background-alt);
+        }
+
+        .offering-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .offering-tagline {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 16px;
+        }
+
+        .offering h2 {
+            font-size: clamp(36px, 5vw, 48px);
+            color: var(--text-primary);
+            margin-bottom: 40px;
+            line-height: 1.15;
+        }
+
+        .offering h3 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            margin-top: 48px;
+            margin-bottom: 18px;
+        }
+
+        .offering-para {
+            font-size: 19px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .offering-para:last-of-type {
+            margin-bottom: 0;
+        }
+
+        /* Pull quote / callout */
+        .callout {
+            border-left: 4px solid var(--primary);
+            padding: 16px 28px;
+            margin: 36px 0;
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.55;
+            font-style: normal;
+        }
+
+        /* Feature list (What we check / What's included) */
+        .feature-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            background: var(--white);
+            border-radius: 4px;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+            padding: 16px 20px;
+            transition: box-shadow 0.3s var(--transition-smooth);
+        }
+
+        .feature-item:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-check {
+            flex: 0 0 28px;
+            width: 28px;
+            height: 28px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2px;
+        }
+
+        .feature-check svg {
+            width: 13px;
+            height: 13px;
+        }
+
+        .feature-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .feature-text strong {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text-primary);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .feature-text span {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.65;
+        }
+
+        /* Plain-text feature item (no bold label) */
+        .feature-text p {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            margin: 0;
+        }
+
+        /* CTA block */
+        .offering-cta {
+            margin-top: 48px;
+            text-align: center;
         }
 
         /* ==================== */
@@ -66,7 +212,13 @@
         /* ==================== */
         .tools-showcase {
             padding: 100px 0;
-            background: var(--white);
+            background: var(--background-alt);
+        }
+
+        .tools-showcase h2 {
+            font-size: clamp(32px, 4vw, 44px);
+            text-align: center;
+            margin-bottom: 48px;
         }
 
         .tools-grid {
@@ -81,8 +233,8 @@
             background: var(--white);
             padding: 40px 32px;
             border-radius: 4px;
-            border: 1px solid rgba(0,0,0,0.06);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
             position: relative;
             overflow: hidden;
@@ -102,7 +254,7 @@
 
         .tool-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
         }
 
         .tool-card:hover::before {
@@ -110,9 +262,9 @@
         }
 
         .tool-card.sharepoint:hover::before { background: #0078D4; }
-        .tool-card.onedrive:hover::before { background: #0364B8; }
-        .tool-card.teams:hover::before { background: #5B5FC7; }
-        .tool-card.intune:hover::before { background: #00A4EF; }
+        .tool-card.onedrive:hover::before   { background: #0364B8; }
+        .tool-card.teams:hover::before      { background: #5B5FC7; }
+        .tool-card.intune:hover::before     { background: #00A4EF; }
 
         .tool-icon {
             width: 64px;
@@ -140,7 +292,7 @@
         /* ==================== */
         .certifications {
             padding: 100px 0;
-            background: var(--background-alt);
+            background: var(--white);
         }
 
         .certifications h2 {
@@ -167,7 +319,7 @@
             border: 0;
             background: var(--white);
             border-radius: 4px;
-            box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+            box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
             text-align: left;
         }
 
@@ -182,7 +334,7 @@
             justify-content: center;
             overflow: hidden;
             padding: 4px;
-            box-shadow: 0 10px 22px rgba(0,0,0,0.10);
+            box-shadow: 0 10px 22px rgba(0, 0, 0, 0.10);
         }
 
         .cert-badge {
@@ -257,9 +409,10 @@
             font-size: 20px;
             opacity: 0.9;
             margin-bottom: 48px;
-            max-width: 600px;
+            max-width: 620px;
             margin-left: auto;
             margin-right: auto;
+            line-height: 1.65;
         }
 
         .final-cta .btn-primary {
@@ -276,16 +429,35 @@
         /* ==================== */
         /* RESPONSIVE           */
         /* ==================== */
+        @media (max-width: 1024px) {
+            .offering {
+                padding: 80px 0;
+            }
+        }
+
         @media (max-width: 768px) {
+            .page-header {
+                padding: 140px 0 60px;
+            }
+
+            .offering {
+                padding: 80px 0;
+            }
+
+            .offering h2 {
+                margin-bottom: 28px;
+            }
+
+            .callout {
+                font-size: 20px;
+                padding: 14px 20px;
+            }
+
             .tools-grid {
                 grid-template-columns: 1fr;
                 max-width: 500px;
                 margin-left: auto;
                 margin-right: auto;
-            }
-
-            .page-header {
-                padding: 140px 0 60px;
             }
 
             .tools-showcase,
@@ -299,8 +471,35 @@
         }
 
         @media (max-width: 480px) {
+            .offering {
+                padding: 64px 0;
+            }
+
+            .offering-para {
+                font-size: 17px;
+            }
+
+            .callout {
+                font-size: 18px;
+                padding: 12px 16px;
+            }
+
+            .feature-item {
+                padding: 14px 16px;
+            }
+
+            .feature-check {
+                flex: 0 0 24px;
+                width: 24px;
+                height: 24px;
+            }
+
             .tool-card {
                 padding: 32px 24px;
+            }
+
+            .final-cta {
+                padding: 80px 0;
             }
         }
     </style>
@@ -325,16 +524,436 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>The Microsoft 365 Services We Optimize</h1>
-            <p>Your subscription already includes powerful tools. We set them up so they actually work for your team.</p>
+            <h1>What We Do</h1>
+            <p>We secure Microsoft 365 environments. That's it. If you need help with your phone system, we'll refer you to someone else.</p>
         </div>
     </section>
 
-    <!-- Tools Showcase -->
+    <!-- ===================================== -->
+    <!-- Section 1: M365 Security Assessment   -->
+    <!-- ===================================== -->
+    <section class="offering" id="security-assessment">
+        <div class="container">
+            <div class="offering-content">
+                <p class="offering-tagline animate-on-scroll">Find out what's broken before someone else does.</p>
+                <h2 class="animate-on-scroll">M365 Security Assessment</h2>
+
+                <div class="animate-on-scroll">
+                    <p class="offering-para">Most small businesses pay for Microsoft 365 security features every month and never turn them on. MFA isn't enforced. Former employees still have active accounts. Sensitive files are accessible to people who left two years ago.</p>
+                    <p class="offering-para">Nothing bad has happened yet — so nobody's worried.</p>
+                    <p class="offering-para">That's the problem. The risk is invisible until it isn't. And by then, you're dealing with a breach, not a gap.</p>
+                </div>
+
+                <h3 class="animate-on-scroll">What we do.</h3>
+                <p class="offering-para animate-on-scroll">We review your entire Microsoft 365 environment — identity, access, email protection, device security — and tell you exactly where you're exposed. Not a scan. Not an automated report. A hands-on review by someone who knows what to look for.</p>
+
+                <h3 class="animate-on-scroll">What we check.</h3>
+                <ul class="feature-list" role="list">
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <p>Whether MFA is actually enforced (not just "available")</p>
+                        </div>
+                    </li>
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <p>Every former employee's account — are they fully offboarded, or just forgotten?</p>
+                        </div>
+                    </li>
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <p>Conditional Access — are logins being verified, or is the front door wide open?</p>
+                        </div>
+                    </li>
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <p>Defender configurations — turned on, or just licensed?</p>
+                        </div>
+                    </li>
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <p>SharePoint and OneDrive permissions — who can see what, and should they?</p>
+                        </div>
+                    </li>
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <p>Email protection — are phishing and spoofing defences actually working?</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3 class="animate-on-scroll">What you get.</h3>
+                <p class="offering-para animate-on-scroll">A prioritized findings report. Not 40 pages of jargon — a clear scorecard that shows where you were, where you are, and what to fix first. We rank every finding by risk and give you a remediation plan you can act on — starting with the quick wins that close the biggest gaps fastest.</p>
+
+                <h3 class="animate-on-scroll">What this costs.</h3>
+                <p class="offering-para animate-on-scroll">For about the price of one unused software licence per employee, you'll know exactly where your security gaps are and have a plan to close them. Most environments take 1–2 weeks to assess.</p>
+
+                <div class="offering-cta animate-on-scroll">
+                    <a href="https://outlook.office.com/book/FreeConsultations@cloudbearconsulting.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOK A SECURITY ASSESSMENT →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- Section 2: Copilot Readiness Assessment   -->
+    <!-- ========================================= -->
+    <section class="offering offering-alt" id="copilot-readiness">
+        <div class="container">
+            <div class="offering-content">
+                <p class="offering-tagline animate-on-scroll">Before you turn on AI, make sure it can't see everything.</p>
+                <h2 class="animate-on-scroll">Copilot Readiness Assessment</h2>
+
+                <div class="animate-on-scroll">
+                    <p class="offering-para">Microsoft Copilot is powerful. It searches your files, reads your emails, scans your SharePoint. It finds things fast.</p>
+                    <p class="offering-para">That's exactly the problem.</p>
+                    <p class="offering-para">Every permission gap in your environment — every file shared too broadly, every former employee's account still lingering, every SharePoint site open to "everyone" — becomes an active risk the moment Copilot goes live. What used to be a quiet misconfiguration becomes a searchable, surfaceable vulnerability.</p>
+                </div>
+
+                <blockquote class="callout animate-on-scroll">Copilot doesn't create security problems. It amplifies the ones you already have.</blockquote>
+
+                <p class="offering-para animate-on-scroll">If a junior employee can technically access the finance team's SharePoint site, that's a permissions issue. But it's a theoretical one — they'd have to know it exists, navigate to it, and open the right files. Turn on Copilot, and that same employee can ask "show me salary information" and get results in seconds.</p>
+                <p class="offering-para animate-on-scroll">That's not a Copilot problem. That's a permissions problem that Copilot made impossible to ignore.</p>
+
+                <h3 class="animate-on-scroll">What we do.</h3>
+                <p class="offering-para animate-on-scroll">Before you deploy Copilot, we review the foundations it depends on — identity, access, and permissions across your entire Microsoft 365 environment. We find the gaps that Copilot would exploit and close them first.</p>
+
+                <h3 class="animate-on-scroll">What we check.</h3>
+                <ul class="feature-list" role="list">
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Permissions audit</strong>
+                            <span>Who can access what across SharePoint, OneDrive, and Teams? We find the oversharing: sites open to "Everyone except external users," files shared org-wide, inherited permissions nobody reviewed.</span>
+                        </div>
+                    </li>
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Identity hygiene</strong>
+                            <span>Are former employees fully removed? Are shared accounts and service accounts locked down? Every active identity is a potential Copilot user.</span>
+                        </div>
+                    </li>
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Access controls</strong>
+                            <span>Is Conditional Access enforcing who can log in, from where, on what device? Without this, Copilot access is uncontrolled.</span>
+                        </div>
+                    </li>
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Sensitivity labels</strong>
+                            <span>Are your most sensitive documents classified and protected? If not, Copilot treats them the same as everything else.</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3 class="animate-on-scroll">What you get.</h3>
+                <p class="offering-para animate-on-scroll">A Copilot Readiness Report that shows your current state, the specific risks Copilot would amplify, and a prioritized remediation plan. We don't just tell you what's wrong — we sequence the fixes so you can deploy Copilot with confidence, not anxiety.</p>
+
+                <div class="offering-cta animate-on-scroll">
+                    <a href="https://outlook.office.com/book/FreeConsultations@cloudbearconsulting.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOK A COPILOT READINESS ASSESSMENT →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================== -->
+    <!-- Section 3: Offboarding & Identity Cleanup   -->
+    <!-- =========================================== -->
+    <section class="offering" id="identity-cleanup">
+        <div class="container">
+            <div class="offering-content">
+                <p class="offering-tagline animate-on-scroll">The people who left are still inside your systems.</p>
+                <h2 class="animate-on-scroll">Offboarding &amp; Identity Cleanup</h2>
+
+                <div class="animate-on-scroll">
+                    <p class="offering-para">Someone leaves your organisation. HR sends an email. IT disables the account. Done.</p>
+                    <p class="offering-para">Except it's not done. The account is disabled but not deleted. The licence is still assigned — you're paying for it every month. Their OneDrive is still there, full of files, some shared with external contacts. Their mailbox is still receiving messages. Their permissions on SharePoint, Teams, and shared drives haven't changed. Their device is still enrolled.</p>
+                    <p class="offering-para">Nobody notices because nobody checks. It's not on anyone's task list. And because nothing visibly goes wrong, it stays that way for months. Sometimes years.</p>
+                </div>
+
+                <blockquote class="callout animate-on-scroll">This is the most expensive problem nobody's looking at.</blockquote>
+
+                <p class="offering-para animate-on-scroll">It's expensive twice. First, you're paying for licences assigned to people who don't work for you anymore. Second — and this is the one that should keep you up at night — every one of those accounts is a door. A door with a key still under the mat.</p>
+
+                <h3 class="animate-on-scroll">What we do.</h3>
+                <p class="offering-para animate-on-scroll">We audit every identity in your Microsoft 365 environment and answer three questions: Who has access? Should they? And what's the blast radius if that account is compromised?</p>
+
+                <h3 class="animate-on-scroll">What we check.</h3>
+                <ul class="feature-list" role="list">
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Ghost accounts</strong>
+                            <span>Every disabled, inactive, or orphaned account that's still consuming a licence or retaining access. We find them all.</span>
+                        </div>
+                    </li>
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Incomplete offboarding</strong>
+                            <span>The account was disabled, but was the licence reclaimed? Were SharePoint permissions revoked? Was the OneDrive transferred or wiped? Was the mailbox converted or removed? Was the device unenrolled from Intune? Most organisations get one or two of these right. Almost nobody gets all of them.</span>
+                        </div>
+                    </li>
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Shared and service accounts</strong>
+                            <span>The accounts that don't belong to anyone specific are often the least governed and the most dangerous. We identify every one and assess how they're secured.</span>
+                        </div>
+                    </li>
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Permission inheritance</strong>
+                            <span>Former employees whose access was granted through group memberships that were never cleaned up. They're gone, but their permissions aren't.</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3 class="animate-on-scroll">What you get.</h3>
+                <p class="offering-para animate-on-scroll">A full identity hygiene report: every account that shouldn't exist, every licence you can reclaim, every permission that should have been revoked and wasn't. Plus a remediation plan — prioritised by risk, with the quick wins flagged so you can start closing gaps immediately.</p>
+                <p class="offering-para animate-on-scroll">Most clients recover the cost of this engagement in reclaimed licences alone.</p>
+
+                <div class="offering-cta animate-on-scroll">
+                    <a href="https://outlook.office.com/book/FreeConsultations@cloudbearconsulting.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOK AN IDENTITY CLEANUP →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- Section 4: Licensing & Value Optimization     -->
+    <!-- ============================================= -->
+    <section class="offering offering-alt" id="licensing-optimization">
+        <div class="container">
+            <div class="offering-content">
+                <p class="offering-tagline animate-on-scroll">Stop paying for what you're not using. Start using what you're paying for.</p>
+                <h2 class="animate-on-scroll">Licensing &amp; Value Optimization</h2>
+
+                <div class="animate-on-scroll">
+                    <p class="offering-para">Here's what we see in almost every environment we review: businesses paying for Microsoft 365 features they've never configured, licences assigned to people who left months ago, and premium tiers that nobody needs.</p>
+                    <p class="offering-para">You're not overspending because you bought the wrong thing. You're overspending because nobody set it up properly.</p>
+                </div>
+
+                <blockquote class="callout animate-on-scroll">The real waste isn't the licence — it's the features inside it you're not using.</blockquote>
+
+                <p class="offering-para animate-on-scroll">Most small businesses on Business Premium or E3/E5 plans are sitting on security tools, compliance features, and automation capabilities that are included in what they already pay for. They just haven't been turned on. That's dead money.</p>
+
+                <h3 class="animate-on-scroll">What we do.</h3>
+                <p class="offering-para animate-on-scroll">We review your licensing against what you actually use — and what you should be using. Then we do one of two things: we save you money by right-sizing your licences, or we unlock value by configuring features you're already paying for. Sometimes both.</p>
+
+                <h3 class="animate-on-scroll">How it works.</h3>
+                <ul class="feature-list" role="list">
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Licence audit</strong>
+                            <span>Every user, every licence, every assignment. We find the orphaned licences, the mismatches, and the downgrades you didn't know were possible.</span>
+                        </div>
+                    </li>
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Feature activation</strong>
+                            <span>If you're paying for Defender, Conditional Access, or Intune and nobody's configured them, we turn them on. That's not an upsell — that's getting what you already bought.</span>
+                        </div>
+                    </li>
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Right-sizing</strong>
+                            <span>If you're on E5 and only need E3, we'll tell you. If you're on Business Basic and need Business Premium for security, we'll tell you that too. We recommend what fits, not what costs more.</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3 class="animate-on-scroll">What you get.</h3>
+                <p class="offering-para animate-on-scroll">A clear licensing report showing what you have, what you need, and what to change. Plus a dollar figure: here's what you save, here's what you unlock, here's the net impact.</p>
+
+                <h3 class="animate-on-scroll">A note on how we work.</h3>
+                <p class="offering-para animate-on-scroll">We don't start here. Security comes first. If your environment has gaps — unprotected accounts, missing MFA, no Conditional Access — we fix those before we touch licensing. A cheaper environment that isn't secure isn't a win.</p>
+
+                <div class="offering-cta animate-on-scroll">
+                    <a href="https://outlook.office.com/book/FreeConsultations@cloudbearconsulting.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOK A LICENSING REVIEW →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- Section 5: Ongoing Security Management    -->
+    <!-- ========================================= -->
+    <section class="offering" id="ongoing-security">
+        <div class="container">
+            <div class="offering-content">
+                <p class="offering-tagline animate-on-scroll">Security isn't a project. It's how you operate.</p>
+                <h2 class="animate-on-scroll">Ongoing Security Management</h2>
+
+                <div class="animate-on-scroll">
+                    <p class="offering-para">Here's what usually happens after a security assessment.</p>
+                    <p class="offering-para">We hand over the report. The client fixes the urgent items. Momentum carries them through the first few weeks. Then other priorities take over. Three months later, a new employee is onboarded without MFA. A contractor gets broad SharePoint access "temporarily." Someone leaves and their account lingers. The gaps start reopening.</p>
+                    <p class="offering-para">Not because anyone was careless. Because security isn't anyone's full-time job.</p>
+                </div>
+
+                <blockquote class="callout animate-on-scroll">An assessment tells you where you stand. This service keeps you there.</blockquote>
+
+                <p class="offering-para animate-on-scroll">This isn't a monitoring dashboard you'll never check. It's not an automated scan that sends you alerts you don't understand. It's a person — someone who already knows your environment — keeping it secure on an ongoing basis.</p>
+
+                <h3 class="animate-on-scroll">What's included.</h3>
+                <ul class="feature-list" role="list">
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Monthly security review</strong>
+                            <span>We check what changed since last month. New accounts, modified permissions, policy changes, licence assignments, Defender alerts. If something drifted, we catch it before it becomes a problem.</span>
+                        </div>
+                    </li>
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Offboarding verification</strong>
+                            <span>Every time someone leaves, we verify the full offboarding checklist was completed. Account disabled, licence reclaimed, permissions revoked, device unenrolled, mailbox handled. Not just the first step — all of them.</span>
+                        </div>
+                    </li>
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Onboarding baseline</strong>
+                            <span>New employees get the right security posture from day one. Correct licence, MFA enforced, Conditional Access applied, device enrolled. No "we'll get to that later."</span>
+                        </div>
+                    </li>
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Configuration drift detection</strong>
+                            <span>Policies get changed. Exclusions get added. Someone turns something off to troubleshoot and forgets to turn it back on. We catch these before they compound.</span>
+                        </div>
+                    </li>
+                    <li class="feature-item animate-on-scroll">
+                        <div class="feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 7L5 10L11 3" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Quarterly posture report</strong>
+                            <span>A clear summary for your leadership: here's your security posture, here's what changed, here's what we addressed. The kind of document that answers the board's questions before they ask.</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3 class="animate-on-scroll">What's not included — and why.</h3>
+                <p class="offering-para animate-on-scroll">This isn't a helpdesk. We don't reset passwords or troubleshoot Outlook. That's your IT provider's job, and they're better at it than we are. We do one thing: we keep your Microsoft 365 environment secure.</p>
+
+                <h3 class="animate-on-scroll">What this costs.</h3>
+                <p class="offering-para animate-on-scroll">A few dollars per user per month — less than most organisations spend on a single unused software subscription. Flat monthly number. No timesheets, no surprise invoices, no meter running every time you ask a question.</p>
+
+                <div class="offering-cta animate-on-scroll">
+                    <a href="https://outlook.office.com/book/FreeConsultations@cloudbearconsulting.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOK A CONVERSATION ABOUT ONGOING SECURITY →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Showcase (supporting, demoted) -->
     <section class="tools-showcase">
         <div class="container">
+            <h2 class="animate-on-scroll">The Microsoft 365 Tools We Work With</h2>
             <div class="tools-grid">
-                <div class="tool-card sharepoint">
+                <div class="tool-card sharepoint animate-on-scroll">
                     <img src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20251008.001/assets/brand-icons/product/svg/sharepoint_48x1.svg"
                          alt="SharePoint logo"
                          class="tool-icon"
@@ -344,7 +963,7 @@
                     <h3 class="tool-name">SharePoint</h3>
                     <p class="tool-description">Your team has files in email, desktops, and shared drives nobody remembers. We put them in one place with a search that actually works.</p>
                 </div>
-                <div class="tool-card onedrive">
+                <div class="tool-card onedrive animate-on-scroll">
                     <img src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20251008.001/assets/brand-icons/product/svg/onedrive_48x1.svg"
                          alt="OneDrive logo"
                          class="tool-icon"
@@ -354,7 +973,7 @@
                     <h3 class="tool-name">OneDrive</h3>
                     <p class="tool-description">Right now if an employee's laptop dies, their files die with it. We make every file auto-save to the cloud so nothing is ever lost.</p>
                 </div>
-                <div class="tool-card teams">
+                <div class="tool-card teams animate-on-scroll">
                     <img src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20251008.001/assets/brand-icons/product/svg/teams_48x1.svg"
                          alt="Microsoft Teams logo"
                          class="tool-icon"
@@ -364,7 +983,7 @@
                     <h3 class="tool-name">Teams</h3>
                     <p class="tool-description">Your team emails a file, someone edits it, emails it back, and now there are four versions. We set up Teams so everyone edits the same document at the same time.</p>
                 </div>
-                <div class="tool-card intune">
+                <div class="tool-card intune animate-on-scroll">
                     <img src="https://www.microsoft.com/content/dam/microsoft/bade/images/photography/en-us/1069395-products-intune-icon-50x50.png"
                          alt="Microsoft Intune logo"
                          class="tool-icon"
@@ -381,9 +1000,9 @@
     <!-- Certifications -->
     <section class="certifications">
         <div class="container">
-            <h2>Microsoft Certifications</h2>
+            <h2 class="animate-on-scroll">Microsoft Certifications</h2>
             <ul class="certs-grid" role="list">
-                <li class="cert-card">
+                <li class="cert-card animate-on-scroll">
                     <div class="cert-icon" aria-hidden="true">
                         <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="MS-700 badge" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg" />
                     </div>
@@ -392,7 +1011,7 @@
                         <div class="cert-meta">Associate</div>
                     </div>
                 </li>
-                <li class="cert-card">
+                <li class="cert-card animate-on-scroll">
                     <div class="cert-icon" aria-hidden="true">
                         <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="AI-900 badge" src="https://images.credly.com/size/680x680/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png" />
                     </div>
@@ -401,7 +1020,7 @@
                         <div class="cert-meta">Fundamentals</div>
                     </div>
                 </li>
-                <li class="cert-card">
+                <li class="cert-card animate-on-scroll">
                     <div class="cert-icon" aria-hidden="true">
                         <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="SC-900 badge" src="https://images.credly.com/size/680x680/images/fc1352af-87fa-4947-ba54-398a0e63322e/security-compliance-and-identity-fundamentals-600x600.png" />
                     </div>
@@ -410,7 +1029,7 @@
                         <div class="cert-meta">Fundamentals</div>
                     </div>
                 </li>
-                <li class="cert-card">
+                <li class="cert-card animate-on-scroll">
                     <div class="cert-icon" aria-hidden="true">
                         <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="MS-900 badge" src="https://images.credly.com/size/680x680/images/0c6d9839-f468-4adc-987d-5cfae4a9ee67/image.png" />
                     </div>
@@ -419,7 +1038,7 @@
                         <div class="cert-meta">Fundamentals</div>
                     </div>
                 </li>
-                <li class="cert-card">
+                <li class="cert-card animate-on-scroll">
                     <div class="cert-icon" aria-hidden="true">
                         <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="AB-900 badge" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg" />
                     </div>
@@ -428,7 +1047,7 @@
                         <div class="cert-meta">Fundamentals</div>
                     </div>
                 </li>
-                <li class="cert-card">
+                <li class="cert-card animate-on-scroll">
                     <div class="cert-icon" aria-hidden="true">
                         <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="AB-730 badge" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/ai-business-professional.svg" />
                     </div>
@@ -437,7 +1056,7 @@
                         <div class="cert-meta">Professional</div>
                     </div>
                 </li>
-                <li class="cert-card">
+                <li class="cert-card animate-on-scroll">
                     <div class="cert-icon" aria-hidden="true">
                         <img class="cert-badge" loading="lazy" decoding="async" width="32" height="32" alt="AB-731 badge" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/ai-transformation-leader.svg" />
                     </div>
@@ -453,10 +1072,12 @@
     <!-- Final CTA -->
     <section class="final-cta" id="book-call">
         <div class="container">
-            <h2>Ready to Get More From Microsoft 365?</h2>
-            <p>Book a free 30-minute call. We'll look at your current setup and tell you exactly what you're not using.</p>
-            <a href="https://outlook.office.com/book/FreeConsultations@cloudbearconsulting.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOK YOUR FREE CALL</a>
-            <p class="final-support">Free consultation. No obligation. Real answers.</p>
+            <h2 class="animate-on-scroll">Ready to Find Out What You're Missing?</h2>
+            <p class="animate-on-scroll">Book a free 30-minute call. We'll look at your current setup and tell you exactly where the gaps are — security, licensing, or both. Even if you never hire us, you'll leave knowing what to fix.</p>
+            <div class="animate-on-scroll">
+                <a href="https://outlook.office.com/book/FreeConsultations@cloudbearconsulting.com/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-primary">BOOK YOUR FREE CALL →</a>
+            </div>
+            <p class="final-support animate-on-scroll">Free consultation. No obligation. Real answers.</p>
         </div>
     </section>
 
@@ -497,6 +1118,30 @@
             } else {
                 header.style.boxShadow = 'none';
             }
+        });
+
+        // Scroll Animation Observer (with staggered delays)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Add staggered delay for list items
+                    const siblings = entry.target.parentElement.querySelectorAll('.animate-on-scroll');
+                    const siblingIndex = Array.from(siblings).indexOf(entry.target);
+
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, siblingIndex * 100);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
         });
     </script>
 </body>
