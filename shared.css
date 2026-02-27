@@ -92,6 +92,22 @@ h1, h2, h3, h4 {
 }
 
 /* ==================== */
+/* TOP BANNER           */
+/* ==================== */
+.top-banner {
+    background: var(--primary);
+    color: var(--text-primary);
+    text-align: center;
+    padding: 12px 24px;
+    margin-top: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* ==================== */
 /* HEADER               */
 /* ==================== */
 .header {
@@ -293,6 +309,10 @@ h1, h2, h3, h4 {
 
     .logo img {
         height: 34px;
+    }
+
+    .top-banner {
+        display: none;
     }
 
     .header .btn {
