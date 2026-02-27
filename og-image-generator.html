@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>OG Image Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .instructions {
+            margin-bottom: 24px;
+            padding: 16px 24px;
+            background: #fff;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #333;
+            max-width: 1200px;
+            text-align: center;
+        }
+        .instructions strong { color: #425B76; }
+        .og-image {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #425B76 0%, #374A5E 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .logo-img {
+            height: 160px;
+            margin-bottom: 28px;
+        }
+        .accent-bar {
+            width: 60px;
+            height: 4px;
+            background: #FFCC2A;
+            border-radius: 2px;
+            margin-bottom: 28px;
+        }
+        .tagline {
+            font-size: 28px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.85);
+            letter-spacing: 0.02em;
+            margin-bottom: 16px;
+        }
+        .website {
+            font-size: 18px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.45);
+            letter-spacing: 0.04em;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <strong>How to save:</strong> Right-click the image below &rarr; Inspect Element &rarr; select the <code>.og-image</code> div &rarr; right-click in DevTools &rarr; "Capture node screenshot".
+    </div>
+    <div class="og-image">
+        <img class="logo-img" src="./CloudBearConsulting Logo/Font logo Png/Font logo BgGr.png" alt="Cloud Bear Consulting">
+        <div class="accent-bar"></div>
+        <div class="tagline">Know your Microsoft 365 is safe. Use all of it.</div>
+        <div class="website">www.cloudbearconsulting.com</div>
+    </div>
+</body>
+</html>
